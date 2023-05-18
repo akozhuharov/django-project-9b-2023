@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-6 justify-content-center offset-md-4">
+{% for post in posts %}
+<h1>{{post.title}}</h1>
+<small>{{post.date}}</small>
+<p>{{post.body}}</p>
+
+{% endfor %}
+<a class="btn btn-danger" href="/create/">Create</a>
+</div> 
+
+{% endblock %}
